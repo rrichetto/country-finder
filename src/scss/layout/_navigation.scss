@@ -5,29 +5,48 @@
   justify-content: space-between;
   align-items: center;
 
+  &__search-box {
+    position: relative;
+  }
+
   &__search {
     color: $color-grey;
     background-color: $color-white;
     font-size: 1.6rem;
     font-family: $main-font;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1rem 1rem 4rem;
     width: 30rem;
     outline: none;
     border: none;
-    border-radius: 1rem;
-    box-shadow: 0 .5rem 1rem rgba($color-grey, .3);
+    border-radius: .75rem;
+    box-shadow: 0 .5rem 1rem rgba($color-grey, .2);
   }
 
   &__search-btn {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
     color: $color-grey;
-    position: relative;
-    right: 4.5rem;
-    cursor: pointer;
-    padding: 1rem;
+
   }
 
-  &__filter {
-    color: $color-grey;
+  &__region-box {
+    color: $color-black;
     background-color: $color-white;
+    padding: 1rem 1.5rem;
+    border-radius: .75rem;
+    box-shadow: 0 .5rem 1rem rgba($color-grey, .2);
+    cursor: pointer;
+
+    i {
+      font-size: 1.2rem;
+      margin-left: 1.5rem;
+    }
+    
+  }
+
+  &__region {
+
   }
 }

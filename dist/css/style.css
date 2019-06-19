@@ -23,6 +23,7 @@ body {
   border-radius: .75rem;
   overflow: hidden; }
   .card__flag {
+    display: block;
     width: 100%; }
   .card__content {
     padding: 2rem; }
@@ -51,26 +52,35 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  .nav__search-box {
+    position: relative; }
   .nav__search {
     color: #858585;
     background-color: white;
     font-size: 1.6rem;
     font-family: "Nunito Sans", sans-serif;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1rem 1rem 4rem;
     width: 30rem;
     outline: none;
     border: none;
-    border-radius: 1rem;
-    box-shadow: 0 0.5rem 1rem rgba(133, 133, 133, 0.3); }
+    border-radius: .75rem;
+    box-shadow: 0 0.5rem 1rem rgba(133, 133, 133, 0.2); }
   .nav__search-btn {
-    color: #858585;
-    position: relative;
-    right: 4.5rem;
-    cursor: pointer;
-    padding: 1rem; }
-  .nav__filter {
-    color: #858585;
-    background-color: white; }
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #858585; }
+  .nav__region-box {
+    color: #111517;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    border-radius: .75rem;
+    box-shadow: 0 0.5rem 1rem rgba(133, 133, 133, 0.2);
+    cursor: pointer; }
+    .nav__region-box i {
+      font-size: 1.2rem;
+      margin-left: 1.5rem; }
 
 .countries {
   display: grid;
