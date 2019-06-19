@@ -1,0 +1,33 @@
+.nav {
+  padding: 2.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__search {
+    color: $color-grey;
+    background-color: $color-white;
+    font-size: 1.6rem;
+    font-family: $main-font;
+    padding: 1rem 1.5rem;
+    width: 30rem;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1rem rgba($color-grey, .3);
+  }
+
+  &__search-btn {
+    color: $color-grey;
+    position: relative;
+    right: 4.5rem;
+    cursor: pointer;
+    padding: 1rem;
+  }
+
+  &__filter {
+    color: $color-grey;
+    background-color: $color-white;
+  }
+}
