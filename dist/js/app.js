@@ -17,7 +17,7 @@ let currentRegion = 'all';
 
 // Listeners
 window.addEventListener('DOMContentLoaded', () => {
-  if (location.href.includes('index')) {
+  if (!location.href.includes('details')) {
     showCountries();
   } else {
     const code = location.hash.split('#')[1];
