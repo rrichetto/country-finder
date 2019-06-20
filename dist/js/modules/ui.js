@@ -33,6 +33,7 @@ export default class UI {
         <h2 class="details__name">${country.name}</h2>
         <div class="details__info-box">
           <p><span>Native Name: </span>${country.nativeName}</p>
+          <p><span>Demonym: </span>${country.demonym}</p>
           <p><span>Population: </span>${formatNum(country.population)}</p>
           <p><span>Region: </span>${country.region}</p>
           <p><span>Sub Region: </span>${country.subregion}</p>

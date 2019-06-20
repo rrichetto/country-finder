@@ -74,20 +74,16 @@ body {
 .header {
   background-color: white; }
   .header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 1rem 2.5rem; }
-  .header .theme {
-    color: #111517;
-    text-decoration: none;
-    padding: .5rem 0; }
 
 .nav {
   padding: 2.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media (max-width: 600px) {
+    .nav {
+      flex-direction: column; } }
   .nav__search-box {
     position: relative; }
   .nav__search {
@@ -96,7 +92,7 @@ body {
     font-size: 1.7rem;
     font-family: "Nunito Sans", sans-serif;
     padding: 1rem 1rem 1rem 4rem;
-    width: 30rem;
+    width: 26rem;
     outline: none;
     border: none;
     border-radius: .75rem;
@@ -109,6 +105,9 @@ body {
     color: #858585; }
   .nav__region-box {
     position: relative; }
+    @media (max-width: 600px) {
+      .nav__region-box {
+        margin-top: 1rem; } }
   .nav__toggle {
     position: relative;
     color: #111517;
@@ -118,6 +117,9 @@ body {
     border-radius: .75rem;
     box-shadow: 0 0.5rem 1rem rgba(133, 133, 133, 0.2);
     cursor: pointer; }
+    @media (max-width: 600px) {
+      .nav__toggle {
+        width: 26rem; } }
     .nav__toggle i {
       position: absolute;
       top: 50%;

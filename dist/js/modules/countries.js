@@ -6,8 +6,8 @@ export default class Countries {
     return data;
   }
 
-  async getCountry(name) {
-    const response = await fetch(`https://restcountries.eu/rest/v2/name/${name}`);
+  async getCountry(code) {
+    const response = await fetch(`https://restcountries.eu/rest/v2/alpha/${code}`);
     const data = await response.json();
     return data;
   }

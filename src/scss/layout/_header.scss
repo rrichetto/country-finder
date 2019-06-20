@@ -2,20 +2,6 @@
   background-color: $color-white;
   
   .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 1rem 2.5rem;
   }
-
-  .title {
-
-  }
-
-  .theme {
-    color: $color-black;
-    text-decoration: none;
-    padding: .5rem 0;
-  }
-
 }
